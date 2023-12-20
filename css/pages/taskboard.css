@@ -1,0 +1,534 @@
+/* line 4, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper {
+  padding: 15px;
+}
+/* line 6, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  /* line 6, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .topbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 13, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .topbar .title-block {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 13, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .topbar .title-block {
+    margin-bottom: 10px;
+  }
+}
+/* line 21, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: auto;
+}
+/* line 30, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: reverse;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 34, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  z-index: 0;
+}
+/* line 37, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item:not(:last-child) {
+  margin-left: -5px;
+}
+/* line 40, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item:hover {
+  z-index: 1;
+}
+/* line 43, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item .user-label,
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item img {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  cursor: default;
+}
+/* line 50, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item .user-label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #cccccc;
+  color: #ffffff;
+  font-size: 14px;
+}
+/* line 62, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item:not(:first-child) img,
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .user-list-item:not(:first-child) .user-label {
+  outline: 2px solid #ffffff;
+}
+/* line 68, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .user-list-group .more-users {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  margin-left: -4px;
+  background-color: #ffffff;
+  font-size: 10px;
+  color: #212121;
+  text-decoration: none;
+}
+/* line 83, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .filter-group {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  gap: 10px;
+}
+/* line 87, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .filter-group .form-element-select select {
+  border-color: #4e92ff;
+  font-weight: 600;
+}
+/* line 93, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .search-block {
+  margin-left: unset;
+}
+@media (min-width: 768px) {
+  /* line 93, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .topbar .right-block .search-block {
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 93, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .topbar .right-block .search-block {
+    margin-left: unset;
+  }
+}
+/* line 102, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .options-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  gap: 10px;
+}
+/* line 105, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .options-block button {
+  border: 1px solid #ddd;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+/* line 112, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .topbar .right-block .options-block button img {
+  width: 16px;
+}
+/* line 120, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block .task-status-group .task-status, .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-status {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 10px 0;
+}
+/* line 126, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block .task-status-group .task-status .badge, .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-status .badge {
+  background-color: #4e92ff;
+  padding: 0.10rem 0.25rem;
+  min-width: 20px;
+  margin-left: 0.25rem;
+  line-height: 16px;
+  outline: 1px solid #ffffff;
+}
+/* line 135, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel {
+  background-color: #e8f1ff;
+  padding: 0.75rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 139, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel:not(:last-child) {
+  margin-bottom: 10px;
+}
+/* line 142, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 146, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header:not(.collapsed) {
+  padding-bottom: 10px;
+}
+/* line 151, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header:not(.collapsed) .actions button.action-toggle img {
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 158, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+}
+@media (min-width: 992px) {
+  /* line 158, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block {
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+  }
+}
+/* line 165, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block .title {
+  font-weight: 600;
+  font-size: 16px;
+}
+/* line 169, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block .task-status-group {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  column-gap: 20px;
+}
+@media (max-width: 767px) {
+  /* line 169, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block .task-status-group {
+    display: none;
+  }
+}
+/* line 176, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .title-block .task-status-group .task-status {
+  margin: 0;
+  white-space: nowrap;
+}
+/* line 183, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .actions {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+  gap: 5px;
+}
+/* line 187, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .actions button {
+  border: 1px solid #ddd;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+/* line 194, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-header .actions button img {
+  width: 15px;
+}
+/* line 202, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body.collapse:not(.show) {
+  display: none;
+}
+/* line 206, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(0, minmax(0, 1fr));
+  grid-template-columns: repeat(0, minmax(0, 1fr));
+  grid-gap: 10px;
+}
+@media (min-width: 576px) {
+  /* line 206, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group {
+    -ms-grid-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  /* line 206, ../../scss/pages/taskboard.scss */
+  .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}
+/* line 217, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box {
+  background-color: #d8e6ff;
+  padding: 0.5rem;
+  border: 1px solid #c0dcff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 225, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card {
+  background-color: #ffffff;
+  font-size: 14px;
+  border-left: 4px solid #4e92ff;
+  margin-bottom: 0.5rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 0.5);
+}
+/* line 232, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-header,
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-body,
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer {
+  padding: 0.5rem;
+}
+/* line 237, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 600;
+  padding-top: 0.75rem;
+}
+/* line 247, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-body .description-list {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+/* line 253, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: end;
+  align-items: end;
+  padding-bottom: 0.75rem;
+}
+/* line 257, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .label-group {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+/* line 261, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .label-group .label {
+  padding: 0.15rem 0.65rem;
+  font-size: 12px;
+}
+/* line 266, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .assignee-block {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-left: auto;
+}
+/* line 269, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .assignee-block .assignee {
+  font-size: 12px;
+  margin-right: 0.25rem;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+/* line 275, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .assignee-block .label {
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  border-radius: 50rem;
+  background-color: #4e92ff;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+/* line 290, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box button {
+  width: 100%;
+  font-size: 14px;
+  color: #777;
+  min-height: 34px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 298, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box button span {
+  line-height: 0;
+  margin-left: 0.5rem;
+}
+/* line 302, ../../scss/pages/taskboard.scss */
+.app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box button img {
+  width: 14px;
+}

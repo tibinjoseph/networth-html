@@ -1,0 +1,18 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+
+.button {
+    border: 1px solid transparent;
+    @include border-radius(0.35rem);
+    padding: 0.35rem 0.75rem;
+    min-height: 32px;
+    white-space: nowrap;
+    cursor: pointer;
+    &.button-blue {
+        background-color: $blue;
+        color: $white;
+    }
+    &.button-white {
+        background-color: $white;
+    }
+}

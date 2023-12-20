@@ -1,0 +1,31 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    &.rounded {
+        @include border-radius(50rem);
+    }
+    &.bg-info-light {
+        color: $info;
+    }
+    &.bg-danger-light {
+        color: $danger;
+    }
+    &.bg-primary-light {
+        color: $primary;
+    }
+    &.bg-success-light {
+        color: $success;
+    }
+    &.bg-warning-light {
+        color: $warning;
+    }
+}

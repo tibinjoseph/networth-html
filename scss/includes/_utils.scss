@@ -1,0 +1,40 @@
+@import "./mixins";
+@import "./variables";
+
+.bgc-primary {
+    background-color: $primaryColor !important;
+}
+.bg-info {
+    background-color: $info;
+}
+.bg-info-light {
+    background-color: lighten($info, 40%);
+}
+.bg-danger {
+    background-color: $danger;
+}
+.bg-danger-light {
+    background-color: lighten($danger, 33%);
+}
+.bg-primary {
+    background-color: $primary;
+}
+.bg-primary-light {
+    background-color: lighten($primary, 32%);
+}
+.bg-success {
+    background-color: $success;
+}
+.bg-success-light {
+    background-color: lighten($success, 43%);
+}
+.bg-warning {
+    background-color: $warning;
+}
+.bg-warning-light {
+    background-color: lighten($warning, 31%);
+}
+
+.d-inline-flex {
+    @include inline-flex;
+}
