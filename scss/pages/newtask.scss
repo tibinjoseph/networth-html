@@ -1,0 +1,67 @@
+.app-newtask-content-wrapper {
+    .topbar {
+        @include breakpoint(mn1200) {
+            @include flexbox;
+            @include align-items(center);
+        }
+        .title-block {
+            @include breakpoint(mn1200) {
+                margin-right: 10px;
+            }
+            @include breakpoint(mx1199) {
+                margin-bottom: 10px;
+            }
+        }
+        .right-block {
+            .action-block {
+                @include flexbox;
+                gap: 10px;
+                button {
+                    border-color: $blue;
+                    font-weight: 600;
+                    @include flexbox;
+                    @include align-items(center);
+                    img {
+                        margin-left: 0.35rem;
+                    }
+                }
+            }
+            .submit-block {
+                button {
+                    @include flexbox;
+                    @include align-items(center);
+                    img {
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .task-create-container {
+        @include gridbox;
+        @include grid-template-columns(1fr 500px);
+        grid-column-gap: 15px;
+        .task-block {
+            .task-container {
+                @include gridbox;
+                @include grid-template-columns(1fr 300px);
+                .task-description {
+
+                }
+                .task-info {
+                    .task-info-list {
+                        .title {
+
+                        }
+                        .content {
+
+                        }
+                    }
+                }
+            }
+        }
+        .task-detsils-block {
+            background-color: #ccc;
+        }
+    }
+}

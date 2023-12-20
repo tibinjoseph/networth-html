@@ -11,11 +11,12 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background-image: url(../images/angle-down.svg);
+        background-image: url(../images/svg/angle-down.svg);
         background-repeat: no-repeat;
         background-position: right 10px center;
         padding-right: 25px;
         background-size: 13px;
+        font-family: inherit;
         cursor: pointer;
         &:focus {
             outline: none;

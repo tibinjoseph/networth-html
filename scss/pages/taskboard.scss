@@ -1,11 +1,43 @@
 @import "../includes/mixins";
 @import "../includes/variables";
 
-.app-taskboard-content-wrapper {
+.app-main-content-wrapper {
     padding: 15px;
     .topbar {
         margin-top: 15px;
         margin-bottom: 40px;
+        font-size: 13px;
+        .title-block {
+            .title {
+                font-size: 21px;
+            }
+        }
+        .right-block {
+            @include flexbox;
+            @include align-items(center);
+            @include flex-wrap(wrap);
+            gap: 10px;
+            margin-left: auto;
+            .options-block {
+                @include flexbox;
+                gap: 10px;
+                button {
+                    border: 1px solid #ddd;
+                    @include inline-flex;
+                    @include align-items(center);
+                    @include justify-content(center);
+                    width: 32px;
+                    height: 32px;
+                    img {
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.app-taskboard-content-wrapper {
+    .topbar {
         @include breakpoint(mn1200) {
             @include flexbox;
             @include align-items(center);
@@ -19,14 +51,6 @@
             }
         }
         .right-block {
-            @include flexbox;
-            @include align-items(center);
-            @include flex-wrap(wrap);
-            gap: 10px;
-            margin-left: auto;
-            @include breakpoint(mn992) {
-                
-            }
             .user-list-group {
                 @include inline-flex;
                 @include flex-direction(row-reverse);
@@ -54,9 +78,6 @@
                         background-color: #cccccc;
                         color: #ffffff;
                         font-size: 14px;
-                    }
-                    img {
-
                     }
                     &:not(:first-child) {
                         img,
@@ -99,21 +120,6 @@
                     margin-left: unset;
                 }
             }
-            .options-block {
-                @include flexbox;
-                gap: 10px;
-                button {
-                    border: 1px solid #ddd;
-                    @include inline-flex;
-                    @include align-items(center);
-                    @include justify-content(center);
-                    width: 32px;
-                    height: 32px;
-                    img {
-                        width: 16px;
-                    }
-                }
-            }
         }
     }
     .panel-group {
@@ -121,7 +127,7 @@
             @include inline-flex;
             @include align-items(center);
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             margin: 10px 0;
             .badge {
                 background-color: $blue;
@@ -164,7 +170,7 @@
                     }
                     .title {
                         font-weight: 600;
-                        font-size: 16px;
+                        font-size: 15px;
                     }
                     .task-status-group {
                         @include gridbox;
@@ -224,7 +230,7 @@
                         }
                         .task-card {
                             background-color: $white;
-                            font-size: 14px;
+                            font-size: 12px;
                             border-left: 4px solid $blue;
                             margin-bottom: 0.5rem;
                             @include border-radius(5px);
@@ -261,13 +267,14 @@
                                     .label {
                                         padding: 0.15rem 0.65rem;
                                         font-size: 12px;
+                                        font-weight: 500;
                                     }
                                 }
                                 .assignee-block {
                                     @include align-items(center);
                                     margin-left: auto;
                                     .assignee {
-                                        font-size: 12px;
+                                        font-size: 11px;
                                         margin-right: 0.25rem;
                                         white-space: nowrap;
                                         margin-left: 10px;
@@ -281,7 +288,6 @@
                                         @include border-radius(50rem);
                                         background-color: $blue;
                                         color: $white;
-                                        font-size: 14px;
                                         text-transform: capitalize;
                                     }
                                 }
@@ -289,7 +295,7 @@
                         }
                         button {
                             width: 100%;
-                            font-size: 14px;
+                            font-size: 13px;
                             color: #777;
                             min-height: 34px;
                             @include flexbox;
