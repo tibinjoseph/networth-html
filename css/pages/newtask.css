@@ -1,79 +1,330 @@
-/*
-Error: Undefined mixin 'breakpoint'.
-        on line 3 of E:/tibin/work/networth-html/scss/pages/newtask.scss, in `breakpoint'
-        from line 3 of E:/tibin/work/networth-html/scss/pages/newtask.scss
-
-1: .app-newtask-content-wrapper {
-2:     .topbar {
-3:         @include breakpoint(mn1200) {
-4:             @include flexbox;
-5:             @include align-items(center);
-6:         }
-7:         .title-block {
-8:             @include breakpoint(mn1200) {
-
-Backtrace:
-E:/tibin/work/networth-html/scss/pages/newtask.scss:3:in `breakpoint'
-E:/tibin/work/networth-html/scss/pages/newtask.scss:3
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'breakpoint'.\A         on line 3 of E:/tibin/work/networth-html/scss/pages/newtask.scss, in `breakpoint'\A         from line 3 of E:/tibin/work/networth-html/scss/pages/newtask.scss\A \A 1: .app-newtask-content-wrapper {\A 2:     .topbar {\A 3:         @include breakpoint(mn1200) {\A 4:             @include flexbox;\A 5:             @include align-items(center);\A 6:         }\A 7:         .title-block {\A 8:             @include breakpoint(mn1200) {"; }
+@media (min-width: 1200px) {
+  /* line 5, ../../scss/pages/newtask.scss */
+  .app-newtask-content-wrapper .topbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 10, ../../scss/pages/newtask.scss */
+  .app-newtask-content-wrapper .topbar .title-block {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 10, ../../scss/pages/newtask.scss */
+  .app-newtask-content-wrapper .topbar .title-block {
+    margin-bottom: 10px;
+  }
+}
+/* line 19, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .topbar .right-block .action-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  gap: 10px;
+}
+/* line 22, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .topbar .right-block .action-block button {
+  border-color: #4e92ff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 27, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .topbar .right-block .action-block button img {
+  margin-left: 0.35rem;
+}
+/* line 33, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .topbar .right-block .submit-block button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 36, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .topbar .right-block .submit-block button img {
+  margin-left: 0.5rem;
+}
+/* line 43, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 500px;
+  grid-template-columns: 1fr 500px;
+  grid-column-gap: 15px;
+}
+/* line 47, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+/* line 50, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .project-title,
+.app-newtask-content-wrapper .task-create-container .task-block .client-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 55, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 300px;
+  grid-template-columns: 1fr 300px;
+  border-top: 1px solid #dbdade;
+}
+/* line 59, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description {
+  padding: 15px 15px 15px 0;
+  border-right: 1px solid #dbdade;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+/* line 64, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+/* line 69, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+/* line 73, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file img {
+  margin-right: 0.15rem;
+}
+/* line 76, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file label {
+  white-space: nowrap;
+  margin: 0;
+  color: #4e92ff;
+}
+/* line 81, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+/* line 92, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .instructions {
+  color: #666666;
+  font-size: 13px;
+}
+/* line 97, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+/* line 98, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment .user, .app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item .user {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #4e92ff;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  border-radius: 9999px;
+}
+/* line 108, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment .user .label, .app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+/* line 115, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+}
+/* line 121, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment .user img {
+  width: 100%;
+}
+/* line 132, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+}
+/* line 135, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+}
+/* line 141, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item .user img {
+  width: 100%;
+}
+/* line 150, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block textarea {
+  color: #666666;
+}
+/* line 156, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info {
+  padding: 15px 0 15px 15px;
+}
+/* line 158, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+/* line 161, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 110px 1fr;
+  grid-template-columns: 110px 1fr;
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  font-size: 13px;
+}
+/* line 166, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .title {
+  font-weight: 600;
+}
+/* line 170, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .badge {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+}
+/* line 176, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+/* line 180, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .assigned-to,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .reviewers,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .assigned-to,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .reviewers {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 183, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .assigned-to .label,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .reviewers .label,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .assigned-to .label,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .reviewers .label {
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  border-radius: 50rem;
+  background-color: #4e92ff;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+/* line 199, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .form-element-input input {
+  padding: 0;
+  border: none;
+}
+/* line 204, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .form-element-input .icon img {
+  margin-right: 0.5rem;
+}
+/* line 215, ../../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-detsils-block {
+  background-color: #ccc;
+}

@@ -1,12 +1,32 @@
 @import "../includes/mixins";
 @import "../includes/variables";
 
+
+%form-element-styles {
+    border: 1px solid $borderColor;
+    @include border-radius(0.35rem);
+    padding: 0.35rem 0.75rem;
+    font-family: inherit;
+    display: block;
+    margin: 0;
+    @include placeholder{
+        color: #b6b4bd;
+    }
+    &:focus,
+    &:hover {
+        @include box-shadow(none);
+        outline: none;
+    }
+}
+.form-group {
+    label {
+        display: inline-block;
+        margin-bottom: 0.25rem;
+        font-size: 13px;
+    }
+}
 .form-element-select {
     select {
-        border: 1px solid #ddd;
-        @include border-radius(0.35rem);
-        padding: 0.35rem 0.75rem;
-        margin: 0;
         min-height: 32px;
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -16,10 +36,18 @@
         background-position: right 10px center;
         padding-right: 25px;
         background-size: 13px;
-        font-family: inherit;
         cursor: pointer;
-        &:focus {
-            outline: none;
-        }
+        @extend %form-element-styles;
+    }
+}
+.form-element-textarea {
+    textarea {
+        @extend %form-element-styles;
+    }
+}
+
+.form-element-input {
+    input {
+        @extend %form-element-styles;
     }
 }

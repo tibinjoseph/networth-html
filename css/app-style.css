@@ -1,6 +1,6 @@
 /* line 4, ../scss/includes/_utils.scss */
 .bgc-primary {
-  background-color: #4469c4 !important;
+  background-color: #4e92ff !important;
 }
 
 /* line 7, ../scss/includes/_utils.scss */
@@ -86,14 +86,54 @@
 }
 
 /* line 5, ../scss/components/_form.scss */
-.form-element-select select {
-  border: 1px solid #ddd;
+.form-element-select select, .form-element-textarea textarea, .form-element-input input {
+  border: 1px solid #dbdade;
   -webkit-border-radius: 0.35rem;
   -moz-border-radius: 0.35rem;
   -ms-border-radius: 0.35rem;
   border-radius: 0.35rem;
   padding: 0.35rem 0.75rem;
+  font-family: inherit;
+  display: block;
   margin: 0;
+}
+/* line 28, ../scss/includes/_mixins.scss */
+.form-element-select select::-webkit-input-placeholder, .form-element-textarea textarea::-webkit-input-placeholder, .form-element-input input::-webkit-input-placeholder {
+  color: #b6b4bd;
+}
+/* line 29, ../scss/includes/_mixins.scss */
+.form-element-select select:-moz-placeholder, .form-element-textarea textarea:-moz-placeholder, .form-element-input input:-moz-placeholder {
+  color: #b6b4bd;
+}
+/* line 30, ../scss/includes/_mixins.scss */
+.form-element-select select::-moz-placeholder, .form-element-textarea textarea::-moz-placeholder, .form-element-input input::-moz-placeholder {
+  color: #b6b4bd;
+}
+/* line 31, ../scss/includes/_mixins.scss */
+.form-element-select select:-ms-input-placeholder, .form-element-textarea textarea:-ms-input-placeholder, .form-element-input input:-ms-input-placeholder {
+  color: #b6b4bd;
+}
+/* line 32, ../scss/includes/_mixins.scss */
+.form-element-select select::placeholder, .form-element-textarea textarea::placeholder, .form-element-input input::placeholder {
+  color: #b6b4bd;
+}
+/* line 15, ../scss/components/_form.scss */
+.form-element-select select:focus, .form-element-textarea textarea:focus, .form-element-input input:focus, .form-element-select select:hover, .form-element-textarea textarea:hover, .form-element-input input:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* line 22, ../scss/components/_form.scss */
+.form-group label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-size: 13px;
+}
+
+/* line 29, ../scss/components/_form.scss */
+.form-element-select select {
   min-height: 32px;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -103,12 +143,7 @@
   background-position: right 10px center;
   padding-right: 25px;
   background-size: 13px;
-  font-family: inherit;
   cursor: pointer;
-}
-/* line 21, ../scss/components/_form.scss */
-.form-element-select select:focus {
-  outline: none;
 }
 
 /* line 4, ../scss/components/_badge.scss */
@@ -692,7 +727,7 @@
 }
 
 @media (min-width: 1200px) {
-  /* line 2, ../scss/pages/newtask.scss */
+  /* line 5, ../scss/pages/newtask.scss */
   .app-newtask-content-wrapper .topbar {
     display: -webkit-box;
     display: -moz-box;
@@ -707,18 +742,18 @@
   }
 }
 @media (min-width: 1200px) {
-  /* line 7, ../scss/pages/newtask.scss */
+  /* line 10, ../scss/pages/newtask.scss */
   .app-newtask-content-wrapper .topbar .title-block {
     margin-right: 10px;
   }
 }
 @media (max-width: 1199px) {
-  /* line 7, ../scss/pages/newtask.scss */
+  /* line 10, ../scss/pages/newtask.scss */
   .app-newtask-content-wrapper .topbar .title-block {
     margin-bottom: 10px;
   }
 }
-/* line 16, ../scss/pages/newtask.scss */
+/* line 19, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .topbar .right-block .action-block {
   display: -webkit-box;
   display: -moz-box;
@@ -727,7 +762,7 @@
   display: flex;
   gap: 10px;
 }
-/* line 19, ../scss/pages/newtask.scss */
+/* line 22, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .topbar .right-block .action-block button {
   border-color: #4e92ff;
   font-weight: 600;
@@ -742,11 +777,11 @@
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 24, ../scss/pages/newtask.scss */
+/* line 27, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .topbar .right-block .action-block button img {
   margin-left: 0.35rem;
 }
-/* line 30, ../scss/pages/newtask.scss */
+/* line 33, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .topbar .right-block .submit-block button {
   display: -webkit-box;
   display: -moz-box;
@@ -759,11 +794,11 @@
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 33, ../scss/pages/newtask.scss */
+/* line 36, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .topbar .right-block .submit-block button img {
   margin-left: 0.5rem;
 }
-/* line 40, ../scss/pages/newtask.scss */
+/* line 43, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .task-create-container {
   display: -ms-grid;
   display: grid;
@@ -771,14 +806,253 @@
   grid-template-columns: 1fr 500px;
   grid-column-gap: 15px;
 }
-/* line 45, ../scss/pages/newtask.scss */
+/* line 47, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+/* line 50, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .project-title,
+.app-newtask-content-wrapper .task-create-container .task-block .client-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 55, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .task-create-container .task-block .task-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 300px;
   grid-template-columns: 1fr 300px;
+  border-top: 1px solid #dbdade;
 }
-/* line 63, ../scss/pages/newtask.scss */
+/* line 59, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description {
+  padding: 15px 15px 15px 0;
+  border-right: 1px solid #dbdade;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+/* line 64, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+/* line 69, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+/* line 73, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file img {
+  margin-right: 0.15rem;
+}
+/* line 76, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file label {
+  white-space: nowrap;
+  margin: 0;
+  color: #4e92ff;
+}
+/* line 81, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .file input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+/* line 92, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .file-attachment .instructions {
+  color: #666666;
+  font-size: 13px;
+}
+/* line 97, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+/* line 98, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment .user, .app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item .user {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #4e92ff;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  border-radius: 9999px;
+}
+/* line 108, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment .user .label, .app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+/* line 115, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+}
+/* line 121, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .add-comment .user img {
+  width: 100%;
+}
+/* line 132, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+}
+/* line 135, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+}
+/* line 141, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block .list-comment .comment-item .user img {
+  width: 100%;
+}
+/* line 150, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-description .comment-block textarea {
+  color: #666666;
+}
+/* line 156, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info {
+  padding: 15px 0 15px 15px;
+}
+/* line 158, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+/* line 161, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 110px 1fr;
+  grid-template-columns: 110px 1fr;
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  font-size: 13px;
+}
+/* line 166, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .title {
+  font-weight: 600;
+}
+/* line 170, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .badge {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+}
+/* line 176, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+/* line 180, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .assigned-to,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .reviewers,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .assigned-to,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .reviewers {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 183, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .assigned-to .label,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .assigned-to-list .reviewers .label,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .assigned-to .label,
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .reviewers-list .reviewers .label {
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  border-radius: 50rem;
+  background-color: #4e92ff;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+/* line 199, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .form-element-input input {
+  padding: 0;
+  border: none;
+}
+/* line 204, ../scss/pages/newtask.scss */
+.app-newtask-content-wrapper .task-create-container .task-block .task-container .task-info .task-info-list .task-info-item .content .form-element-input .icon img {
+  margin-right: 0.5rem;
+}
+/* line 215, ../scss/pages/newtask.scss */
 .app-newtask-content-wrapper .task-create-container .task-detsils-block {
   background-color: #ccc;
 }

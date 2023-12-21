@@ -1,3 +1,6 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+
 .app-newtask-content-wrapper {
     .topbar {
         @include breakpoint(mn1200) {
@@ -17,7 +20,7 @@
                 @include flexbox;
                 gap: 10px;
                 button {
-                    border-color: $blue;
+                    border-color: $primaryColor;
                     font-weight: 600;
                     @include flexbox;
                     @include align-items(center);
@@ -42,19 +45,168 @@
         @include grid-template-columns(1fr 500px);
         grid-column-gap: 15px;
         .task-block {
+            @include gridbox;
+            grid-gap: 10px;
+            .project-title,
+            .client-title {
+                font-size: 16px;
+                font-weight: 600;
+            }
             .task-container {
                 @include gridbox;
                 @include grid-template-columns(1fr 300px);
+                border-top: 1px solid $borderColor;
                 .task-description {
+                    padding: 15px 15px 15px 0;
+                    border-right: 1px solid $borderColor;
+                    @include gridbox;
+                    grid-gap: 30px;
+                    .file-attachment {
+                        @include flexbox;
+                        @include flex-wrap(wrap);
+                        gap: 5px;
+                        margin-top: 10px;
+                        .file {
+                            @include inline-flex;
+                            @include align-items(center);
+                            position: relative;
+                            img {
+                                margin-right: 0.15rem;
+                            }
+                            label {
+                                white-space: nowrap;
+                                margin: 0;
+                                color: $primaryColor;
+                            }
+                            input {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                                padding: 0;
+                                margin: 0;
+                                font-size: 0;
+                                cursor: pointer;
+                            }
+                        }
+                        .instructions {
+                            color: $black-60;
+                            font-size: 13px;
+                        }
+                    }
+                    .comment-block {
+                        %user-styles {
+                            width: 25px;
+                            height: 25px;
+                            @include flexbox;
+                            @include align-items(center);
+                            @include justify-content(center);
+                            overflow: hidden;
+                            background-color: $primaryColor;
+                            @include border-radius(9999px);
+                        }
+                        %label-styles {
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: $white;
+                        }
+                        @include gridbox;
+                        grid-gap: 20px;
+                        .add-comment {
+                            @include gridbox;
+                            @include grid-template-columns(auto 1fr);
+                            grid-column-gap: 8px;
+                            .user {
+                                @extend %user-styles;
+                                img {
+                                    width: 100%;
+                                }
+                                .label {
+                                    @extend %label-styles;
+                                }
+                            }
+                            .comment-box {
+
+                            }
+                        }
+                        .list-comment {
+                            @include gridbox;
+                            grid-gap: 15px;
+                            .comment-item {
+                                @include gridbox;
+                                @include grid-template-columns(auto 1fr);
+                                grid-column-gap: 8px;
+                                .user {
+                                    @extend %user-styles;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .label {
+                                    @extend %label-styles;
+                                }
+                            }
+                        }
+                        textarea {
+                            color: $black-60;
+                        }
+                    }
 
                 }
                 .task-info {
+                    padding: 15px 0 15px 15px;
                     .task-info-list {
-                        .title {
-
-                        }
-                        .content {
-
+                        @include gridbox;
+                        grid-gap: 20px;
+                        .task-info-item {
+                            @include gridbox;
+                            @include grid-template-columns(110px 1fr);
+                            @include align-items(baseline);
+                            font-size: 13px;
+                            .title {
+                               font-weight: 600; 
+                            }
+                            .content {
+                                .badge {
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    padding-left: 0.85rem;
+                                    padding-right: 0.85rem;
+                                }
+                                .assigned-to-list,
+                                .reviewers-list {
+                                    @include gridbox;
+                                    grid-gap: 10px;
+                                    .assigned-to,
+                                    .reviewers {
+                                        @include align-items(center);
+                                        .label {
+                                            width: 22px;
+                                            height: 22px;
+                                            @include flexbox;
+                                            @include align-items(center);
+                                            @include justify-content(center);
+                                            @include border-radius(50rem);
+                                            background-color: $primaryColor;
+                                            color: $white;
+                                            font-size: 12px;
+                                            text-transform: capitalize;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                .form-element-input {
+                                    input {
+                                        padding: 0;
+                                        border: none;
+                                    }
+                                    .icon {
+                                        img {
+                                            margin-right: 0.5rem;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
