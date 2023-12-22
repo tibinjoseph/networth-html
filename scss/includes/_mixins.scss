@@ -57,6 +57,18 @@
         }
     }
 
+    @else if $point==mn650 {
+        @media (min-width: 650px) {
+            @content ;
+        }
+    }
+
+    @else if $point==mx649 {
+        @media (max-width: 649px) {
+            @content ;
+        }
+    }
+
     @else if $point==mn576 {
         @media (min-width: 576px) {
             @content ;
@@ -71,6 +83,18 @@
 
     @else if $point==mn768 {
         @media (min-width: 768px) {
+            @content ;
+        }
+    }
+
+    @else if $point==mx849 {
+        @media (max-width: 849px) {
+            @content ;
+        }
+    }
+
+    @else if $point==mn850 {
+        @media (min-width: 850px) {
             @content ;
         }
     }
@@ -107,6 +131,18 @@
 
     @else if $point==mn1200 {
         @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+
+    @else if $point==mx1299 {
+        @media (max-width: 1299px) {
+            @content ;
+        }
+    }
+
+    @else if $point==mn1300 {
+        @media (min-width: 1300px) {
             @content ;
         }
     }

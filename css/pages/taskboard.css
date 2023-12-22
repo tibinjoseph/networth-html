@@ -462,9 +462,8 @@
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .label-group .label {
   padding: 0.15rem 0.65rem;
   font-size: 12px;
-  font-weight: 500;
 }
-/* line 273, ../../scss/pages/taskboard.scss */
+/* line 272, ../../scss/pages/taskboard.scss */
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .assignee-block {
   -webkit-box-align: center;
   -moz-box-align: center;
@@ -473,14 +472,14 @@
   align-items: center;
   margin-left: auto;
 }
-/* line 276, ../../scss/pages/taskboard.scss */
+/* line 275, ../../scss/pages/taskboard.scss */
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .assignee-block .assignee {
   font-size: 11px;
   margin-right: 0.25rem;
   white-space: nowrap;
   margin-left: 10px;
 }
-/* line 282, ../../scss/pages/taskboard.scss */
+/* line 281, ../../scss/pages/taskboard.scss */
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box .task-card .task-card-footer .assignee-block .label {
   width: 22px;
   height: 22px;
@@ -507,7 +506,7 @@
   color: #ffffff;
   text-transform: capitalize;
 }
-/* line 296, ../../scss/pages/taskboard.scss */
+/* line 295, ../../scss/pages/taskboard.scss */
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box button {
   width: 100%;
   font-size: 13px;
@@ -529,12 +528,12 @@
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 304, ../../scss/pages/taskboard.scss */
+/* line 303, ../../scss/pages/taskboard.scss */
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box button span {
   line-height: 0;
   margin-left: 0.5rem;
 }
-/* line 308, ../../scss/pages/taskboard.scss */
+/* line 307, ../../scss/pages/taskboard.scss */
 .app-taskboard-content-wrapper .panel-group .panel .panel-body .task-group .task-box button img {
   width: 14px;
 }

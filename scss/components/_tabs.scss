@@ -1,0 +1,42 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+
+.custom-tabs {
+    .tab-list {
+        @include flexbox;
+        border-bottom: 1px solid $borderColor;
+        .tab-item {
+            .tab-link {
+                @include flexbox;
+                @include align-items(center);
+                padding: 0.5rem 1rem;
+                font-size: $globalFontSize;
+                color: $tabColor;
+                position: relative;
+                .tab-icon {
+                    line-height: 0;
+                    margin-right: 0.5rem;
+                    width: 24px;
+                    svg {
+                        width: 100%;
+                    }
+                }
+                &.active {
+                    &::after {
+                        content: '';
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: $primaryColor;
+                    }
+                }
+            }
+        }
+        &.center {
+            @include justify-content(center);
+        }
+    }
+}

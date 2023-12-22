@@ -740,11 +740,15 @@
                 </section>
                 <section class="tab-body-section">
                   
-                   <!-- taskboard contents starts -->
+                   <!-- new task contents starts -->
                   <div class="app-main-content-wrapper app-newtask-content-wrapper">
                     <div class="topbar">
                       <div class="title-block">
-                        <h3 class="title">Enter the Task Title Here</h3>
+                        <h3 class="title">Enter the Task Title Here
+                          <span class="icon">
+                            <img src="images/svg/edit.svg" alt="">
+                          </span>
+                        </h3>
                       </div>
                       <div class="right-block">
                         <div class="action-block">
@@ -914,11 +918,112 @@
                           </div>
                         </div>
                       </div>
-                      <div class="task-detsils-block"></div>
-                    </div>
-                    
+                      <div class="task-detsils-block">
+                        <div class="custom-tabs">
+                          <div class="tab-list center">
+                            <div class="tab-item">
+                              <div class="tab-link active">
+                                <div class="tab-icon">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9.00005 5.99998H20M3.80005 5.79998L4.60005 6.59998L6.60005 4.59998M3.80005 11.8L4.60005 12.6L6.60005 10.6M3.80005 17.8L4.60005 18.6L6.60005 16.6M9.00005 12H20M9.00005 18H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                </div>
+                                Sub Tasks
+                              </div>
+                            </div>
+                            <div class="tab-item">
+                              <div class="tab-link">
+                                <div class="tab-icon">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M2.5 14.1666L7.5 9.16665L10.8333 12.5L17.5 5.83331" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.6665 5.83331H17.4998V11.6666" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                </div>
+                                Activity
+                              </div>
+                            </div>
+                            <div class="tab-item">
+                              <div class="tab-link">
+                                <div class="tab-icon">
+                                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M8.80666 5.55931L4.03866 10.3273C3.69552 10.6815 3.50537 11.1564 3.50927 11.6495C3.51316 12.1426 3.71078 12.6144 4.05948 12.9631C4.40818 13.3118 4.88 13.5094 5.37312 13.5133C5.86624 13.5172 6.34112 13.3271 6.69529 12.9839L12.9492 6.73863C13.2508 6.44424 13.491 6.09291 13.6558 5.70501C13.8207 5.3171 13.9068 4.90034 13.9094 4.47888C13.912 4.05742 13.8308 3.63964 13.6707 3.24976C13.5106 2.85989 13.2747 2.50567 12.9767 2.20765C12.6787 1.90962 12.3244 1.67372 11.9346 1.51361C11.5447 1.3535 11.1269 1.27237 10.7055 1.27493C10.284 1.27749 9.86723 1.36368 9.47933 1.5285C9.09142 1.69333 8.74009 1.93351 8.44571 2.23513L2.154 8.52684C1.72839 8.94031 1.38922 9.43426 1.1562 9.97998C0.923187 10.5257 0.800981 11.1123 0.796687 11.7057C0.792394 12.299 0.906101 12.8873 1.13119 13.4364C1.35629 13.9854 1.68828 14.4842 2.10786 14.9038C2.52745 15.3234 3.02626 15.6554 3.57529 15.8805C4.12432 16.1056 4.71263 16.2193 5.30599 16.215C5.89936 16.2107 6.48596 16.0885 7.03168 15.8555C7.5774 15.6224 8.07135 15.2833 8.48482 14.8576L14.3642 8.97828" stroke="currentColor" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                  </svg>
+                                </div>
+                                Attachments
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-content">
+                            <div class="tab-pane active">
+                              <div class="task-group">
+                                <div class="task-card">
+                                  <div class="task-card-header">
+                                    <div class="title">The Sub Task Title here #1</div>
+                                    <div class="right-block">
+                                      <div class="icon">
+                                        <img src="images/svg/calendar.svg" alt="">
+                                      </div>
+                                      <div class="date">12/10/2024</div>
+                                    </div>
+                                  </div>
+                                  <div class="task-card-body">
+                                    <div class="client-block">
+                                      <div class="client">Client Name</div>
+                                      <div class="task-status">
+                                        <div class="badge rounded bg-success-light">Status Indication</div>
+                                      </div>
+                                    </div>
+                                    <div class="contents-block">
+                                      <div class="content">
+                                        <div>Estimate: ----</div>
+                                        <div>Remaining: ----</div>
+                                      </div>
+                                      <div class="assignee">
+                                        <div class="name">John Doe</div>
+                                        <div class="label">J</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="task-card">
+                                  <div class="task-card-header">
+                                    <div class="title">The Sub Task Title here #2</div>
+                                    <div class="right-block">
+                                      <div class="icon">
+                                        <img src="images/svg/calendar.svg" alt="">
+                                      </div>
+                                      <div class="date">12/10/2024</div>
+                                    </div>
+                                  </div>
+                                  <div class="task-card-body">
+                                    <div class="client-block">
+                                      <div class="client">Client Name</div>
+                                      <div class="task-status">
+                                        <div class="badge rounded bg-success-light">Status Indication</div>
+                                      </div>
+                                    </div>
+                                    <div class="contents-block">
+                                      <div class="content">
+                                        <div>Estimate: ----</div>
+                                        <div>Remaining: ----</div>
+                                      </div>
+                                      <div class="assignee">
+                                        <div class="name">John Doe</div>
+                                        <div class="label">J</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane"></div>
+                            <div class="tab-pane"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
                   </div>
-                    <!-- taskboard contents ends -->
+                    <!-- new task contents ends -->
 
               </section>
               </main>

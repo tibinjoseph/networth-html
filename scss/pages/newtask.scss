@@ -14,6 +14,10 @@
             @include breakpoint(mx1199) {
                 margin-bottom: 10px;
             }
+            .icon {
+                margin-left: 0.5rem;
+                cursor: pointer;
+            }
         }
         .right-block {
             .action-block {
@@ -42,8 +46,14 @@
     }
     .task-create-container {
         @include gridbox;
-        @include grid-template-columns(1fr 500px);
-        grid-column-gap: 15px;
+        grid-gap: 15px;
+        // @include grid-template-columns(1fr 400px);
+        @include breakpoint(mn1200) {
+            @include grid-template-columns(1fr 400px);
+        }
+        @include breakpoint(mn1300) {
+            @include grid-template-columns(1fr 470px);
+        }
         .task-block {
             @include gridbox;
             grid-gap: 10px;
@@ -54,13 +64,23 @@
             }
             .task-container {
                 @include gridbox;
-                @include grid-template-columns(1fr 300px);
-                border-top: 1px solid $borderColor;
+                @include grid-template-columns(1fr);
+                @include breakpoint(mn768) {
+                    @include grid-template-columns(1fr 330px);
+                    border-top: 1px solid $borderColor;
+                }
                 .task-description {
-                    padding: 15px 15px 15px 0;
-                    border-right: 1px solid $borderColor;
                     @include gridbox;
                     grid-gap: 30px;
+                    padding-bottom: 25px;
+                    border-bottom: 1px solid $borderColor;
+                    @include breakpoint(mn768) {
+                        padding: 15px;
+                        padding-left: 0;
+                        border-right: 1px solid $borderColor;
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
                     .file-attachment {
                         @include flexbox;
                         @include flex-wrap(wrap);
@@ -154,7 +174,14 @@
 
                 }
                 .task-info {
-                    padding: 15px 0 15px 15px;
+                    padding-top: 25px;
+                    padding-bottom: 10px;
+                    @include breakpoint(mn768) {
+                        padding: 15px;
+                        padding-right: 0;
+                        padding-top: 35px;
+                        padding-bottom: 0;
+                    }
                     .task-info-list {
                         @include gridbox;
                         grid-gap: 20px;
@@ -169,7 +196,6 @@
                             .content {
                                 .badge {
                                     font-size: 12px;
-                                    font-weight: normal;
                                     padding-left: 0.85rem;
                                     padding-right: 0.85rem;
                                 }
@@ -213,7 +239,86 @@
             }
         }
         .task-detsils-block {
-            background-color: #ccc;
+            background-color: #f5f9ff;
+            border: 1px solid #d7e6ff;
+            @include border-radius(5px);
+            padding: 5px;
+            @include breakpoint(mn1200) {
+                padding-top: 27px;
+            }
+            .tab-content {
+                padding: 20px;
+            }
+            .task-group {
+                @include gridbox;
+                @include grid-template-columns(1fr);
+                grid-gap: 10px;
+                @include breakpoint(mn850) {
+                    @include grid-template-columns(1fr 1fr);
+                }
+                @include breakpoint(mn1200) {
+                    @include grid-template-columns(1fr);
+                }
+                .task-card {
+                    background-color: $white;
+                    font-size: 12px;
+                    border-left: 4px solid $primaryColor;
+                    @include border-radius(5px);
+                    @include box-shadow(0px 2px 10px -6px rgba(0, 0, 0, 0.5));
+                    .task-card-header,
+                    .task-card-body {
+                        padding: 0.75rem;
+                    }
+                    .task-card-header {
+                        @include gridbox;
+                        @include grid-template-columns(1fr auto);
+                        grid-gap: 10px;
+                        padding-bottom: 0;
+                        .title {
+                            font-size: $globalFontSize;
+                            font-weight: 600;
+                        }
+                        .right-block {
+                            @include flexbox;
+                            @include align-items(center);
+                            gap: 5px;
+                        }
+                    }
+                    .task-card-body {
+                        @include gridbox;
+                        grid-gap: 10px;
+                        .client-block,
+                        .contents-block {
+                            @include gridbox;
+                            @include grid-template-columns(1fr auto);
+                            @include align-items(center);
+                            grid-gap: 10px;
+                        }
+                        .contents-block {
+                            @include align-items(end);
+                            .content {
+    
+                            }
+                            .assignee {
+                                @include inline-flex;
+                                @include align-items(center);
+                                gap: 5px;
+                                .label {
+                                    width: 22px;
+                                    height: 22px;
+                                    @include flexbox;
+                                    @include align-items(center);
+                                    @include justify-content(center);
+                                    @include border-radius(50rem);
+                                    background-color: $primaryColor;
+                                    color: $white;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

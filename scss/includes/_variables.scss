@@ -2,6 +2,7 @@ $primaryColor: #4e92ff;
 // $secondaryColor:#4469c4;
 $bodyColor:#212121;
 $borderColor: #dbdade;
+$tabColor: #9b9b9b;
 $black: #000000;
 $white: #ffffff;
 $info: #23d7f0;
@@ -12,5 +13,8 @@ $warning: #fa9d4d;
 
 // color shades
 $black-60: mix($black, $white, 60%);
+
+// font size
+$globalFontSize: 14px;
 
 
