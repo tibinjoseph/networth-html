@@ -38,6 +38,17 @@
             @content ;
         }
     }
+    @else if $point==mx375 {
+        @media (max-width: 375px) {
+            @content ;
+        }
+    }
+
+    @else if $point==mn376 {
+        @media (min-width: 376px) {
+            @content ;
+        }
+    }
 
     @else if $point==mx480 {
         @media (max-width: 480px) {

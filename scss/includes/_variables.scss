@@ -1,10 +1,11 @@
 $primaryColor: #4e92ff;
 // $secondaryColor:#4469c4;
-$bodyColor:#212121;
+$bodyColor:#252c32;
 $borderColor: #dbdade;
 $tabColor: #9b9b9b;
 $black: #000000;
 $white: #ffffff;
+$light: #eeeeee;
 $info: #23d7f0;
 $danger: #e16065;
 $primary: #7c6fd8;
@@ -12,9 +13,15 @@ $success: #3ec276;
 $warning: #fa9d4d;
 
 // color shades
-$black-60: mix($black, $white, 60%);
+$black-60: mix($black, $white, 70%);
+$black-40: mix($black, $white, 60%);
+$white-50: mix($white, $black-60, 50%);
 
-// font size
+// font
 $globalFontSize: 14px;
+$primaryFont: 'Inter', sans-serif;
+
+// radius
+$maxRadius: 9999px;
 
 

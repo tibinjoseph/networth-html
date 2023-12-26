@@ -1,0 +1,210 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+
+.app-dashboard-content-wrapper {
+    .topbar {
+        @include breakpoint(mn1200) {
+            @include flexbox;
+            @include align-items(center);
+        }
+        .right-block {
+            .action-block {
+                @include breakpoint(mn576) {
+                    grid-auto-columns: auto;
+                    grid-auto-flow: column;
+                    width: auto;
+                }
+            }
+        } 
+    }
+    .dashboard-wrapper {
+        .card-block {
+            %card-shadow-styles {
+                @include box-shadow(0px 5px 14px 0px rgba(0, 0, 0, 0.1));
+            }
+            @include gridbox;
+            @include grid-template-columns(2fr 1fr);
+            grid-gap: 25px;
+            .card {
+                @include border-radius(6px);
+                @extend %card-shadow-styles;
+                &:not(.active-projects) {
+                    background-color: $white;
+                }
+                &.active-projects {
+                    background-color: #f5f9ff;
+                }
+                .card-header,
+                .card-body {
+                    padding: 25px;
+                }
+                .card-header {
+                    @include gridbox;
+                    @include grid-template-columns(1fr auto);
+                    @include align-items(center);
+                    padding-top: 15px;
+                    padding-bottom: 0;
+                    gap: 5px;
+                    .title {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .actions {
+                        font-size: 13px;
+                        font-weight: 600;
+                        .button {
+                            gap: 5px;
+                        }
+                    }
+                }
+                .card-body {
+                    .project-list {
+                        @include gridbox;
+                        @include grid-template-columns(repeat(3, minmax(0, 1fr)));
+                        gap: 10px;
+                        .project-item {
+                            color: $black-60;
+                            background-color: $white;
+                            @include gridbox;
+                            gap: 5px;
+                            padding: 15px;
+                            font-size: 13px;
+                            @include border-radius(6px);
+                            .title {
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                            .description {
+                                font-size: 11px;
+                            }
+                            .progress-block {
+                                @include gridbox;
+                                @include grid-template-columns(1fr auto);
+                                @include align-items(center);
+                                gap: 5px;
+                                .progress {
+                                    position: relative;
+                                    background-color: $white;
+                                    .progress-bar {
+                                        &::after {
+                                            content: '';
+                                            height: 100%;
+                                            width: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            right: 0;
+                                        }
+                                        &.success {
+                                            &::after {
+                                                background-color: transparentize($success, 0.8);
+                                            }
+                                        }
+                                        &.warning {
+                                            &::after {
+                                                background-color: transparentize($warning, 0.8);
+                                            }
+                                        }
+                                        &.danger {
+                                            &::after {
+                                                background-color: transparentize($danger, 0.8);
+                                            }
+                                        }
+                                    }
+                                }
+                                .percentage {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .overdue-tasks {
+                color: $black-60;
+                font-size: 13px;
+                .task-group {
+                    %flexbox-content-centered-styles {
+                        @include flexbox;
+                        @include align-items(center);
+                        @include justify-content(center);
+                    }
+                    @include gridbox;
+                    @include grid-template-columns(1fr 1fr);
+                    gap: 25px;
+                    .task-item {
+                        background-color: $white;
+                        padding: 30px;
+                        @include border-radius(6px);
+                        @include gridbox;
+                        @include justify-content(center);
+                        gap: 10px;
+                        @extend %card-shadow-styles;
+                        .title {
+                            text-align: center;
+                        }                    
+                        .task-content-block {
+                            @extend %flexbox-content-centered-styles;
+                            gap: 20px;
+                            .icon {
+                                padding: 10px;
+                                width: 40px;
+                                height: 40px;
+                                @extend %flexbox-content-centered-styles;
+                                @include border-radius(6px);
+                                &.success {
+                                    background-color: transparentize($success, 0.8);
+                                }
+                                &.warning {
+                                    background-color: transparentize($warning, 0.8);
+                                }
+                                &.danger {
+                                    background-color: transparentize($danger, 0.8);
+                                }
+                            }
+                            .count {
+                                font-size: 32px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+            .my-tasks,
+            .team-tasks {
+                grid-column: 1 / span 2;
+                .card-body {
+                    .task-contents {
+                        @include gridbox;
+                        @include grid-template-columns(300px 1fr);
+                        grid-gap: 20px;
+                        .graph-block {
+                            .title {
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                        }
+                        .data-block {
+                            table {
+                                td {
+                                    .task-status {
+                                        padding: 0.5rem 1rem;
+                                        min-width: 100px;
+                                        @include border-radius($maxRadius);
+                                        text-align: center;
+                                        background-color: #B8D4FF;
+                                        color: #123F85;
+                                        &.danger {
+                                            background-color: transparentize($danger, 0.7);
+                                            color: $danger;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

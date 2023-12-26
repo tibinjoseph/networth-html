@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @import "includes/mixins";
 @import "includes/utils";
 
@@ -5,6 +7,9 @@
 @import "components/form";
 @import "components/badge";
 @import "components/tabs";
+@import "components/progress";
+@import "components/table";
 
 @import "pages/taskboard.scss";
 @import "pages/newtask.scss";
+@import "pages/dashboard.scss";

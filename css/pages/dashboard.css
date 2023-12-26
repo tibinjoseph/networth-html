@@ -1,0 +1,279 @@
+@media (min-width: 1200px) {
+  /* line 5, ../../scss/pages/dashboard.scss */
+  .app-dashboard-content-wrapper .topbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 576px) {
+  /* line 11, ../../scss/pages/dashboard.scss */
+  .app-dashboard-content-wrapper .topbar .right-block .action-block {
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    width: auto;
+  }
+}
+/* line 21, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 25px;
+}
+/* line 22, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card, .app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item {
+  -webkit-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 28, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 31, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card:not(.active-projects) {
+  background-color: #ffffff;
+}
+/* line 34, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card.active-projects {
+  background-color: #f5f9ff;
+}
+/* line 37, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-header,
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body {
+  padding: 25px;
+}
+/* line 41, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 0;
+  gap: 5px;
+}
+/* line 48, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-header .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 52, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-header .actions {
+  font-size: 13px;
+  font-weight: 600;
+}
+/* line 55, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-header .actions .button {
+  gap: 5px;
+}
+/* line 61, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+/* line 65, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item {
+  color: #4d4d4d;
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+  padding: 15px;
+  font-size: 13px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 73, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 77, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .description {
+  font-size: 11px;
+}
+/* line 80, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .progress-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 5px;
+}
+/* line 85, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .progress-block .progress {
+  position: relative;
+  background-color: #ffffff;
+}
+/* line 89, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .progress-block .progress .progress-bar::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 99, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .progress-block .progress .progress-bar.success::after {
+  background-color: rgba(62, 194, 118, 0.2);
+}
+/* line 104, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .progress-block .progress .progress-bar.warning::after {
+  background-color: rgba(250, 157, 77, 0.2);
+}
+/* line 109, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .card .card-body .project-list .project-item .progress-block .progress .progress-bar.danger::after {
+  background-color: rgba(225, 96, 101, 0.2);
+}
+/* line 123, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks {
+  color: #4d4d4d;
+  font-size: 13px;
+}
+/* line 126, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+/* line 127, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block, .app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block .icon {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 135, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item {
+  background-color: #ffffff;
+  padding: 30px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* line 143, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .title {
+  text-align: center;
+}
+/* line 146, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block {
+  gap: 20px;
+}
+/* line 149, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block .icon {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 155, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block .icon.success {
+  background-color: rgba(62, 194, 118, 0.2);
+}
+/* line 158, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block .icon.warning {
+  background-color: rgba(250, 157, 77, 0.2);
+}
+/* line 161, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block .icon.danger {
+  background-color: rgba(225, 96, 101, 0.2);
+}
+/* line 165, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .overdue-tasks .task-group .task-item .task-content-block .count {
+  font-size: 32px;
+  font-weight: 500;
+}
+/* line 173, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .my-tasks,
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .team-tasks {
+  grid-column: 1 / span 2;
+}
+/* line 177, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .my-tasks .card-body .task-contents,
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .team-tasks .card-body .task-contents {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 20px;
+}
+/* line 182, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .my-tasks .card-body .task-contents .graph-block .title,
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .team-tasks .card-body .task-contents .graph-block .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 190, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .my-tasks .card-body .task-contents .data-block table td .task-status,
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .team-tasks .card-body .task-contents .data-block table td .task-status {
+  padding: 0.5rem 1rem;
+  min-width: 100px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  border-radius: 9999px;
+  text-align: center;
+  background-color: #B8D4FF;
+  color: #123F85;
+}
+/* line 197, ../../scss/pages/dashboard.scss */
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .my-tasks .card-body .task-contents .data-block table td .task-status.danger,
+.app-dashboard-content-wrapper .dashboard-wrapper .card-block .team-tasks .card-body .task-contents .data-block table td .task-status.danger {
+  background-color: rgba(225, 96, 101, 0.3);
+  color: #e16065;
+}

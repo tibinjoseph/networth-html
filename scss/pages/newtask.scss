@@ -21,25 +21,15 @@
         }
         .right-block {
             .action-block {
-                @include flexbox;
-                gap: 10px;
-                button {
-                    border-color: $primaryColor;
-                    font-weight: 600;
-                    @include flexbox;
-                    @include align-items(center);
-                    img {
-                        margin-left: 0.35rem;
-                    }
+                @include breakpoint(mn576) {
+                    grid-auto-columns: auto;
+                    grid-auto-flow: column;
+                    width: auto;
                 }
             }
             .submit-block {
-                button {
-                    @include flexbox;
-                    @include align-items(center);
-                    img {
-                        margin-left: 0.5rem;
-                    }
+                @include breakpoint(mn768) {
+                    margin-left: auto;
                 }
             }
         }
@@ -47,7 +37,6 @@
     .task-create-container {
         @include gridbox;
         grid-gap: 15px;
-        // @include grid-template-columns(1fr 400px);
         @include breakpoint(mn1200) {
             @include grid-template-columns(1fr 400px);
         }
@@ -110,7 +99,7 @@
                             }
                         }
                         .instructions {
-                            color: $black-60;
+                            color: $black-40;
                             font-size: 13px;
                         }
                     }
@@ -246,6 +235,13 @@
             @include breakpoint(mn1200) {
                 padding-top: 27px;
             }
+            .custom-tabs {
+                .tab-list {
+                    @include breakpoint(mn1200) {
+                        @include justify-content(center);
+                    }
+                }
+            }
             .tab-content {
                 padding: 20px;
             }
@@ -271,9 +267,13 @@
                     }
                     .task-card-header {
                         @include gridbox;
-                        @include grid-template-columns(1fr auto);
-                        grid-gap: 10px;
+                        @include grid-template-columns(1fr);
+                        @include align-items(baseline);
+                        grid-gap: 5px;
                         padding-bottom: 0;
+                        @include breakpoint(mn376) {
+                            @include grid-template-columns(1fr auto);
+                        }
                         .title {
                             font-size: $globalFontSize;
                             font-weight: 600;
@@ -290,15 +290,17 @@
                         .client-block,
                         .contents-block {
                             @include gridbox;
-                            @include grid-template-columns(1fr auto);
-                            @include align-items(center);
-                            grid-gap: 10px;
+                            @include grid-template-columns(1fr);
+                            grid-gap: 5px;
+                            @include breakpoint(mn376) {
+                                @include grid-template-columns(1fr auto);
+                            }
+                        }
+                        .client-block {
+                            @include align-items(baseline);
                         }
                         .contents-block {
                             @include align-items(end);
-                            .content {
-    
-                            }
                             .assignee {
                                 @include inline-flex;
                                 @include align-items(center);

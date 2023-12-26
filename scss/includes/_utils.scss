@@ -38,3 +38,7 @@
 .d-inline-flex {
     @include inline-flex;
 }
+
+.text-muted {
+    color: $white-50 !important;
+}

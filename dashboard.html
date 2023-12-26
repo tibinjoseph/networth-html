@@ -729,7 +729,7 @@
                       <div class="tab-list-name " title="Home">Home</div>
                     </div>
                     <div class="tab-list-item active ">
-                      <div class="tab-list-name " title="Task Dashboard">New Task</div>
+                      <div class="tab-list-name " title="Task Dashboard">Dashboard</div>
                       <div class="close">
                         <svg role="img" width="1em" height="1em" fill="currentColor" class="sv-icon ico-mag-glass">
                           <use xlink:href="#nw-close"></use>
@@ -740,34 +740,24 @@
                 </section>
                 <section class="tab-body-section">
                   
-                   <!-- new task contents starts -->
-                  <div class="app-main-content-wrapper app-newtask-content-wrapper">
+                   <!-- dashboard contents starts -->
+                  <div class="app-main-content-wrapper app-dashboard-content-wrapper">
                     <div class="topbar">
                       <div class="title-block">
-                        <h3 class="title">Enter the Task Title Here
-                          <span class="icon">
-                            <img src="images/svg/edit.svg" alt="">
-                          </span>
-                        </h3>
+                        <h3 class="title">Dashboard</h3>
                       </div>
                       <div class="right-block">
                         <div class="action-block">
-                          <button class="button button-white">Add Sub Task
+                          <button class="button button-white">New Project
                             <img src="images/svg/add.svg" alt="">
                           </button>
-                          <button class="button button-white">Checklist
-                            <img src="images/svg/checklist.svg" alt="">
-                          </button>
-                          <button class="button button-white">Credentials
-                            <img src="images/svg/credentials.svg" alt="">
-                          </button>
-                          <button class="button button-white">Duplicate
-                            <img src="images/svg/duplicate.svg" alt="">
+                          <button class="button button-white">New Task
+                            <img src="images/svg/add.svg" alt="">
                           </button>
                         </div>
                         <div class="submit-block">
-                          <button class="button button-blue">Save
-                            <img src="images/svg/save.svg" alt="">
+                          <button class="button button-blue">
+                            <img src="images/svg/refresh.svg" alt="">
                           </button>
                         </div>
                         <div class="options-block">
@@ -777,253 +767,236 @@
                         </div>
                       </div>
                     </div>
-                    <div class="task-create-container">
-                      <div class="task-block">
-                        <div class="project-title">Project Name</div>
-                        <div class="client-title">Client Name</div>
-                        <div class="task-container">
-                          <div class="task-description">
-                            <div class="form-group">
-                              <label for="">Description</label>
-                              <div class="form-element-textarea">
-                                <textarea placeholder="Type here" name="" id="" rows="10"></textarea>
-                              </div>
-                              <div class="file-attachment">
-                                <div class="file">
-                                  <img src="images/svg/attachment2.svg" alt="">
-                                  <label for="">Attach files</label>
-                                  <input type="file">
-                                </div>
-                                <div class="instructions">(10 MB limit; accepts JPEG, PNG, PDF, MP3, and more.)</div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="">Comments</label>
-                              <div class="comment-block">
-                                <div class="add-comment">
-                                  <div class="user">
-                                    <img src="images/taskboard/user/01.jpg" alt="">
-                                  </div>
-                                  <div class="comment-box">
-                                    <div class="form-element-textarea">
-                                      <textarea placeholder="Type here" name="" id="" rows="6"></textarea>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="list-comment">
-                                  <div class="comment-item">
-                                    <div class="user">
-                                      <img src="images/taskboard/user/02.jpg" alt="">
-                                    </div>
-                                    <div class="comment-box">
-                                      <div class="form-element-textarea">
-                                        <textarea placeholder="Type here" name="" id="" rows="4">https://www.figma.com/proto/XufCam3dlKn8ZoEsKO6Vx1/Grading?pageid=178%3A2467&type=design&node-320-13913&viewportasasas=1208%2C481%2
-                                        </textarea>
-                                      </div>
-                                    </div>
-                                  </div><div class="comment-item">
-                                    <div class="user">
-                                      <div class="label">R</div>
-                                    </div>
-                                    <div class="comment-box">
-                                      <div class="form-element-textarea">
-                                        <textarea placeholder="Type here" name="" id="" rows="4">https://www.figma.com/proto/XufCam3dlKn8ZoEsKO6Vx1/Grading?pageid=178%3A2467&type=design&node-320-13913&viewportasasas=1208%2C481%2
-                                        </textarea>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                    <div class="dashboard-wrapper">
+                      <div class="card-block">
+                        <div class="card active-projects">
+                          <div class="card-header">
+                            <div class="title">Active Projects</div>
+                            <div class="actions">
+                              <a class="button button-link" role="button">View All
+                                <span>
+                                  <img src="images/svg/arrow-right.svg" alt="">
+                                </span>
+                              </a>
                             </div>
                           </div>
-                          <div class="task-info">
-                            <div class="task-info-list">
-                              <div class="task-info-item">
-                                <div class="title">Priority:</div>
-                                <div class="content">
-                                  <div class="badge rounded bg-danger-light">High Priority</div>
-                                </div>
-                              </div>
-                              <div class="task-info-item">
-                                <div class="title">Status:</div>
-                                <div class="content">
-                                  <div class="badge rounded bg-success-light">On Progress</div>
-                                </div>
-                              </div>
-                              <div class="task-info-item">
-                                <div class="title">Team:</div>
-                                <div class="content">
-                                  <div class="badge rounded bg-primary-light">R&D Team #1</div>
-                                </div>
-                              </div>
-                              <div class="task-info-item">
-                                <div class="title">Assigned To:</div>
-                                <div class="content">
-                                  <div class="assigned-to-list">
-                                    <div class="assigned-to d-inline-flex">
-                                      <div class="label">J</div>
-                                      <div class="name">John Doe</div>
-                                    </div>
+                          <div class="card-body">
+                            <div class="project-list">
+                              <div class="project-item">
+                                <div class="title">ITR 2023</div>
+                                <div class="description">10/10 Tasks Completed</div>
+                                <div class="progress-block">
+                                  <div class="progress">
+                                    <div class="progress-bar success" style="width:100%;"></div>
                                   </div>
+                                  <div class="percentage">100%</div>
                                 </div>
                               </div>
-                              <div class="task-info-item">
-                                <div class="title">Reviewers:</div>
-                                <div class="content">
-                                  <div class="reviewers-list">
-                                    <div class="reviewers d-inline-flex">
-                                      <div class="label">J</div>
-                                      <div class="name">John Doe</div>
-                                    </div>
+                              <div class="project-item">
+                                <div class="title">GST 2023</div>
+                                <div class="description">7/10 Tasks Completed</div>
+                                <div class="progress-block">
+                                  <div class="progress">
+                                    <div class="progress-bar warning" style="width:70%;"></div>
                                   </div>
+                                  <div class="percentage">70%</div>
                                 </div>
                               </div>
-                              <div class="task-info-item">
-                                <div class="title">Review Status:</div>
-                                <div class="content">
-                                  <div class="badge rounded bg-success-light">Approved</div>
-                                </div>
-                              </div>
-                              <div class="task-info-item">
-                                <div class="title">ETA:</div>
-                                <div class="content">
-                                  <div class="form-element-input">
-                                    <input type="text" placeholder="Enter Estimated Working Hours">
+                              <div class="project-item">
+                                <div class="title">Administration</div>
+                                <div class="description">7/10 Tasks Completed</div>
+                                <div class="progress-block">
+                                  <div class="progress">
+                                    <div class="progress-bar warning" style="width:70%;"></div>
                                   </div>
+                                  <div class="percentage">70%</div>
                                 </div>
                               </div>
-                              <div class="task-info-item">
-                                <div class="title">Start Date:</div>
-                                <div class="content">
-                                  <div class="form-element-input d-inline-flex">
-                                    <div class="icon">
-                                      <img src="images/svg/calendar.svg" alt="">
-                                    </div>
-                                    <input type="text" placeholder="Enter date">
+                              <div class="project-item">
+                                <div class="title">Risk Audit</div>
+                                <div class="description">7/10 Tasks Completed</div>
+                                <div class="progress-block">
+                                  <div class="progress">
+                                    <div class="progress-bar warning" style="width:70%;"></div>
                                   </div>
+                                  <div class="percentage">70%</div>
                                 </div>
                               </div>
-                              <div class="task-info-item">
-                                <div class="title">End Date:</div>
-                                <div class="content">
-                                  <div class="form-element-input d-inline-flex">
-                                    <div class="icon">
-                                      <img src="images/svg/calendar.svg" alt="">
-                                    </div>
-                                    <input type="text" placeholder="Enter date">
+                              <div class="project-item">
+                                <div class="title">ITR 2024</div>
+                                <div class="description">1/10 Tasks Completed</div>
+                                <div class="progress-block">
+                                  <div class="progress">
+                                    <div class="progress-bar danger" style="width:10%;"></div>
                                   </div>
+                                  <div class="percentage">10%</div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="task-detsils-block">
-                        <div class="custom-tabs">
-                          <div class="tab-list">
-                            <div class="tab-item">
-                              <div class="tab-link active">
-                                <div class="tab-icon">
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M9.00005 5.99998H20M3.80005 5.79998L4.60005 6.59998L6.60005 4.59998M3.80005 11.8L4.60005 12.6L6.60005 10.6M3.80005 17.8L4.60005 18.6L6.60005 16.6M9.00005 12H20M9.00005 18H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
+                        <div class="overdue-tasks">
+                          <div class="task-group">
+                            <div class="task-item">
+                              <div class="title">Todays Overdue Tasks</div>
+                              <div class="task-content-block">
+                                <div class="icon success">
+                                  <img src="images/dashboard/todays-total-overdue-task.svg" alt="">
                                 </div>
-                                Sub Tasks
+                                <div class="count">0</div>
                               </div>
                             </div>
-                            <div class="tab-item">
-                              <div class="tab-link">
-                                <div class="tab-icon">
-                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M2.5 14.1666L7.5 9.16665L10.8333 12.5L17.5 5.83331" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.6665 5.83331H17.4998V11.6666" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
+                            <div class="task-item">
+                              <div class="title">Total Overdue Tasks</div>
+                              <div class="task-content-block">
+                                <div class="icon warning">
+                                  <img src="images/dashboard/total-overdue-task.svg" alt="">
                                 </div>
-                                Activity
+                                <div class="count">05</div>
                               </div>
                             </div>
-                            <div class="tab-item">
-                              <div class="tab-link">
-                                <div class="tab-icon">
-                                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                    <path d="M8.80666 5.55931L4.03866 10.3273C3.69552 10.6815 3.50537 11.1564 3.50927 11.6495C3.51316 12.1426 3.71078 12.6144 4.05948 12.9631C4.40818 13.3118 4.88 13.5094 5.37312 13.5133C5.86624 13.5172 6.34112 13.3271 6.69529 12.9839L12.9492 6.73863C13.2508 6.44424 13.491 6.09291 13.6558 5.70501C13.8207 5.3171 13.9068 4.90034 13.9094 4.47888C13.912 4.05742 13.8308 3.63964 13.6707 3.24976C13.5106 2.85989 13.2747 2.50567 12.9767 2.20765C12.6787 1.90962 12.3244 1.67372 11.9346 1.51361C11.5447 1.3535 11.1269 1.27237 10.7055 1.27493C10.284 1.27749 9.86723 1.36368 9.47933 1.5285C9.09142 1.69333 8.74009 1.93351 8.44571 2.23513L2.154 8.52684C1.72839 8.94031 1.38922 9.43426 1.1562 9.97998C0.923187 10.5257 0.800981 11.1123 0.796687 11.7057C0.792394 12.299 0.906101 12.8873 1.13119 13.4364C1.35629 13.9854 1.68828 14.4842 2.10786 14.9038C2.52745 15.3234 3.02626 15.6554 3.57529 15.8805C4.12432 16.1056 4.71263 16.2193 5.30599 16.215C5.89936 16.2107 6.48596 16.0885 7.03168 15.8555C7.5774 15.6224 8.07135 15.2833 8.48482 14.8576L14.3642 8.97828" stroke="currentColor" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                  </svg>
+                            <div class="task-item">
+                              <div class="title">Team Overdue<br>Tasks</div>
+                              <div class="task-content-block">
+                                <div class="icon danger">
+                                  <img src="images/dashboard/team-overdue-task.svg" alt="">
                                 </div>
-                                Attachments
+                                <div class="count">18</div>
+                              </div>
+                            </div>
+                            <div class="task-item">
+                              <div class="title">Todays Team<br>Overdue Tasks</div>
+                              <div class="task-content-block">
+                                <div class="icon danger">
+                                  <img src="images/dashboard/todays-team-overdue-task.svg" alt="">
+                                </div>
+                                <div class="count">10</div>
                               </div>
                             </div>
                           </div>
-                          <div class="tab-content">
-                            <div class="tab-pane active">
-                              <div class="task-group">
-                                <div class="task-card">
-                                  <div class="task-card-header">
-                                    <div class="title">The Sub Task Title here #1</div>
-                                    <div class="right-block">
-                                      <div class="icon">
-                                        <img src="images/svg/calendar.svg" alt="">
-                                      </div>
-                                      <div class="date">12/10/2024</div>
-                                    </div>
-                                  </div>
-                                  <div class="task-card-body">
-                                    <div class="client-block">
-                                      <div class="client">Client Name</div>
-                                      <div class="task-status">
-                                        <div class="badge rounded bg-success-light">Status Indication</div>
-                                      </div>
-                                    </div>
-                                    <div class="contents-block">
-                                      <div class="content">
-                                        <div>Estimate: ----</div>
-                                        <div>Remaining: ----</div>
-                                      </div>
-                                      <div class="assignee">
-                                        <div class="name">John Doe</div>
-                                        <div class="label">J</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="task-card">
-                                  <div class="task-card-header">
-                                    <div class="title">The Sub Task Title here #2</div>
-                                    <div class="right-block">
-                                      <div class="icon">
-                                        <img src="images/svg/calendar.svg" alt="">
-                                      </div>
-                                      <div class="date">12/10/2024</div>
-                                    </div>
-                                  </div>
-                                  <div class="task-card-body">
-                                    <div class="client-block">
-                                      <div class="client">Client Name</div>
-                                      <div class="task-status">
-                                        <div class="badge rounded bg-success-light">Status Indication</div>
-                                      </div>
-                                    </div>
-                                    <div class="contents-block">
-                                      <div class="content">
-                                        <div>Estimate: ----</div>
-                                        <div>Remaining: ----</div>
-                                      </div>
-                                      <div class="assignee">
-                                        <div class="name">John Doe</div>
-                                        <div class="label">J</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                        </div>
+                        <div class="card my-tasks">
+                          <div class="card-body">
+                            <div class="task-contents">
+                              <div class="graph-block">
+                                <div class="title">My Tasks</div>
+                              </div>
+                              <div class="data-block">
+                                <table class="table rounded">
+                                  <thead>
+                                    <tr>
+                                      <th>Title</th>
+                                      <th>Client</th>
+                                      <th>Target Date</th>
+                                      <th>Estimate</th>
+                                      <th>Remaining</th>
+                                      <th width="150">Status</th>
+                                      <th>Due</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Demo</td>
+                                      <td>Client Name</td>
+                                      <td>10 Mar 2022</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="task-status">New</div>
+                                      </td>
+                                      <td class="text-muted">146 Days- Overdue</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Demo</td>
+                                      <td>Client Name</td>
+                                      <td>10 Mar 2022</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="task-status">New</div>
+                                      </td>
+                                      <td class="text-muted">146 Days- Overdue</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Demo</td>
+                                      <td>Client Name</td>
+                                      <td>10 Mar 2022</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="task-status">New</div>
+                                      </td>
+                                      <td class="text-muted">146 Days- Overdue</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </div>
                             </div>
-                            <div class="tab-pane"></div>
-                            <div class="tab-pane"></div>
+                          </div>
+                        </div>
+                        <div class="card team-tasks">
+                          <div class="card-body">
+                            <div class="task-contents">
+                              <div class="graph-block">
+                                <div class="title">Team Tasks</div>
+                              </div>
+                              <div class="data-block">
+                                <table class="table rounded">
+                                  <thead>
+                                    <tr>
+                                      <th>Title</th>
+                                      <th>Client</th>
+                                      <th>Target Date</th>
+                                      <th>Estimate</th>
+                                      <th>Remaining</th>
+                                      <th width="150">Status</th>
+                                      <th>Due</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Demo</td>
+                                      <td>Client Name</td>
+                                      <td>10 Mar 2022</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="task-status danger">Overdue</div>
+                                      </td>
+                                      <td class="text-muted">146 Days- Overdue</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Demo</td>
+                                      <td>Client Name</td>
+                                      <td>10 Mar 2022</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="task-status danger">Overdue</div>
+                                      </td>
+                                      <td class="text-muted">146 Days- Overdue</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Demo</td>
+                                      <td>Client Name</td>
+                                      <td>10 Mar 2022</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="task-status">New</div>
+                                      </td>
+                                      <td class="text-muted">146 Days- Overdue</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>  
+                    </div>
                   </div>
-                    <!-- new task contents ends -->
+                    <!-- dashboard contents ends -->
 
               </section>
               </main>

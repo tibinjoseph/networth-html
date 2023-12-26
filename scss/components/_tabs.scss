@@ -2,9 +2,16 @@
 @import "../includes/variables";
 
 .custom-tabs {
+    position: relative;
+    padding-top: 40px;
     .tab-list {
         @include flexbox;
         border-bottom: 1px solid $borderColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
         .tab-item {
             .tab-link {
                 @include flexbox;
@@ -12,7 +19,9 @@
                 padding: 0.5rem 1rem;
                 font-size: $globalFontSize;
                 color: $tabColor;
+                white-space: nowrap;
                 position: relative;
+                cursor: pointer;
                 .tab-icon {
                     line-height: 0;
                     margin-right: 0.5rem;
@@ -22,6 +31,7 @@
                     }
                 }
                 &.active {
+                    color: $primaryColor;
                     &::after {
                         content: '';
                         height: 2px;
@@ -34,9 +44,6 @@
                     }
                 }
             }
-        }
-        &.center {
-            @include justify-content(center);
         }
     }
 }

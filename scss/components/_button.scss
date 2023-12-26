@@ -9,11 +9,18 @@
     white-space: nowrap;
     font-family: inherit;
     cursor: pointer;
+    @include inline-flex;
+    @include align-items(center);
+    @include justify-content(center);
     &.button-blue {
         background-color: $primaryColor;
         color: $white;
     }
     &.button-white {
         background-color: $white;
+    }
+    &.button-link {
+        color: $primaryColor;
+        padding: 0;
     }
 }
