@@ -1,0 +1,43 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+
+.dropdown {
+    position: relative;
+    .dropdown-toggle-container {
+        @include flexbox;
+        @include align-items(center);
+        gap: 5px;
+        .dropdown-toggle {
+            line-height: 0;
+            cursor: pointer;
+            .caret {
+                width: 16px;
+            }
+        }
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        margin: 2px 0;
+        list-style-type: none;
+        padding-inline-start: 0;
+        background-color: $white;
+        padding: 0.5rem 0;
+        border: 1px solid $borderColor;
+        @include border-radius(0.35rem);
+        &.show {
+            display: block;
+        }
+        li {
+            a{
+                color: $bodyColor;
+                text-decoration: none;
+                padding: 0.25rem 1rem;
+                display: block;
+                &:hover {
+                    background-color: transparentize($primaryColor, 0.9)
+                }
+            }
+        }
+    }
+}

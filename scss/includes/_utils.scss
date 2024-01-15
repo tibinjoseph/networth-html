@@ -34,11 +34,16 @@
 .bg-warning-light {
     background-color: lighten($warning, 31%);
 }
-
 .d-inline-flex {
     @include inline-flex;
 }
-
 .text-muted {
     color: $white-50 !important;
+}
+.text-nowrap {
+    white-space: nowrap !important;
+}
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: auto;
 }

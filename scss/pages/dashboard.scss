@@ -3,9 +3,14 @@
 
 .app-dashboard-content-wrapper {
     .topbar {
-        @include breakpoint(mn1200) {
+        @include breakpoint(mn768) {
             @include flexbox;
             @include align-items(center);
+        }
+        .title-block {
+            @include breakpoint(mx767) {
+                margin-bottom: 10px;
+            }
         }
         .right-block {
             .action-block {
@@ -13,6 +18,11 @@
                     grid-auto-columns: auto;
                     grid-auto-flow: column;
                     width: auto;
+                }
+            }
+            .submit-block {
+                @include breakpoint(mn576) {
+                    margin-left: auto;
                 }
             }
         } 
@@ -23,8 +33,14 @@
                 @include box-shadow(0px 5px 14px 0px rgba(0, 0, 0, 0.1));
             }
             @include gridbox;
-            @include grid-template-columns(2fr 1fr);
+            @include grid-template-columns(1fr);
             grid-gap: 25px;
+            @include breakpoint(mn992) {
+                @include grid-template-columns(1fr 1fr);
+            }
+            @include breakpoint(mn1200) {
+                @include grid-template-columns(2fr 1fr);
+            }
             .card {
                 @include border-radius(6px);
                 @extend %card-shadow-styles;
@@ -60,8 +76,14 @@
                 .card-body {
                     .project-list {
                         @include gridbox;
-                        @include grid-template-columns(repeat(3, minmax(0, 1fr)));
-                        gap: 10px;
+                        @include grid-template-columns(1fr);
+                        gap: 15px;
+                        @include breakpoint(mn481) {
+                            @include grid-template-columns(repeat(2, minmax(0, 1fr)));
+                        }
+                        @include breakpoint(mn1200) {
+                            @include grid-template-columns(repeat(3, minmax(0, 1fr)));
+                        }
                         .project-item {
                             color: $black-60;
                             background-color: $white;
@@ -70,6 +92,7 @@
                             padding: 15px;
                             font-size: 13px;
                             @include border-radius(6px);
+                            @include box-shadow(2px 4px 6px -5px rgba(0, 0, 0, 0.3));
                             .title {
                                 font-size: 16px;
                                 font-weight: 600;
@@ -130,8 +153,12 @@
                         @include justify-content(center);
                     }
                     @include gridbox;
-                    @include grid-template-columns(1fr 1fr);
+                    @include grid-template-columns(1fr);
                     gap: 25px;
+                    height: 100%;
+                    @include breakpoint(mn481) {
+                        @include grid-template-columns(1fr 1fr);
+                    }
                     .task-item {
                         background-color: $white;
                         padding: 30px;
@@ -172,16 +199,22 @@
             }
             .my-tasks,
             .team-tasks {
-                grid-column: 1 / span 2;
+                @include breakpoint(mn992) {
+                    grid-column: 1 / span 2;
+                }
                 .card-body {
                     .task-contents {
                         @include gridbox;
-                        @include grid-template-columns(300px 1fr);
+                        @include grid-template-columns(1fr);
                         grid-gap: 20px;
+                        @include breakpoint(mn992) {
+                            @include grid-template-columns(300px 1fr);
+                        }
                         .graph-block {
                             .title {
                                 font-size: 16px;
                                 font-weight: 600;
+                                margin-bottom: 15px;
                             }
                         }
                         .data-block {
