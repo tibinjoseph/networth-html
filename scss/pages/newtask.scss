@@ -8,15 +8,23 @@
             @include align-items(center);
         }
         .title-block {
+            @include gridbox;
+            @include grid-template-columns(1fr auto);
+            @include align-items(center);
+            column-gap: 10px;
             @include breakpoint(mn1200) {
                 margin-right: 10px;
             }
             @include breakpoint(mx1199) {
                 margin-bottom: 10px;
             }
-            .icon {
-                margin-left: 0.5rem;
-                cursor: pointer;
+            .title-container {
+                font-size: 21px;
+                font-weight: 600;
+                .edit-title {
+                    display: inline-block;
+                    line-height: 0;
+                }
             }
         }
         .right-block {
@@ -177,7 +185,7 @@
                         .task-info-item {
                             @include gridbox;
                             @include grid-template-columns(110px 1fr);
-                            @include align-items(baseline);
+                            @include align-items(start);
                             font-size: 13px;
                             .title {
                                font-weight: 600; 
